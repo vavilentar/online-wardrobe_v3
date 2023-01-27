@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Wardrobe</title>
+</head>
+
+<body>
+	<header>
+		<div class="header header__container">
+			<h1><a href="#">Wardrobe</a></h1>
+			<div class="user-menu">
+				<img src="./icons/user-pic.svg" alt="">
+				<a href="#">Профиль</a>
+			</div>
+		</div>
+		<nav>
+			<div class="navbar navbar__container">
+				<ul>
+					<li><a href="#">Мой шкаф</a></li>
+					<li><a href="#">Добавить элемент</a></li>
+					<li><a href="#">Категории</a></li>
+					<li><a href="#">Сезоны</a></li>
+					<li><a id="random-element" href="./pages/item.html"><i class="fa-solid fa-dice"></i></a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="clothes clothes__container">
+			<h2 class="title">Привет, Татьяна!</h2>
+			<h2 class="title">Мой шкаф</h2>
+			<div id="clothes-library"></div>
+		</div>
+		<div class="categories categories__container">
+			<h2 class="title">Категории</h2>
+			<div id="categories-list">
+			</div>
+		</div>
+		<div class="new-element new-element__container">
+			<h2 class="title">Добавить новый элемент одежды</h2>
+			<div id="new-element_form">
+				<form class="form_inputs">
+					<label for="select_type">Выберите тип:</label>
+					<select required name="type" id="select_type"></select>
+					<label for="select_color">Введите цвет:</label>
+					<input required placeholder="Цвет" id="select_color" type="text">
+					<label for="select_brand">Введите бренд: </label>
+					<input required placeholder="Бренд" id="select_brand" type="text">
+					<label for="select_season">Выберите сезон:</label>
+					<select required name="season" id="select_season"></select>
+					<button id="element_create">Добавить</button>
+				</form>
+			</div>
+		</div>
+	</main>
+	<footer></footer>
+
+	<script src="./storage/categories.js"></script>
+	<script src="./storage/seasons.js"></script>
+	<script src="./storage/local.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+
+</html>
