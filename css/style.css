@@ -356,6 +356,11 @@ input {
 	text-transform: uppercase;
 }
 
+.username-title {
+	text-align: right;
+	font-size: 1.2em;
+}
+
 @media (max-width:426px) {
 	#change-galley_size{
 		display: block;
