@@ -361,6 +361,19 @@ input {
 	font-size: 1.2em;
 }
 
+.element_mini {
+	width: 200px;
+}
+
+.element_mini .element_name {
+	font-size: 1.2em;
+}
+
+.element_mini .element_brand {
+	font-size: 1em;
+}
+
+
 @media (max-width:426px) {
 	#change-galley_size{
 		display: block;
@@ -386,9 +399,9 @@ input {
 		text-align: center;
 	}
 
-	.element {
+	/* .element {
 		width: 375px;
-	}
+	} */
 
 	#new-element_form {
 		grid-template-columns: 1fr;

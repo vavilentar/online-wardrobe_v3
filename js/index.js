@@ -16,10 +16,10 @@ changeSizeBtn.addEventListener('click', () => {
 	clothElements.forEach(item => {
 		if (!changed) {
 			changeSizeBtn.innerHTML = 'Увеличить'
-			item.style = "width: 180px"
+			item.classList.add('element_mini')
 		} else {
 			changeSizeBtn.innerHTML = 'Уменьшить'
-			item.style = "width: 375px"
+			item.classList.remove('element_mini')
 		}
 	})
 })
