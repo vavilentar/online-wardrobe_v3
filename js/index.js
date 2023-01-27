@@ -3,6 +3,27 @@ const categoriesLib = document.getElementById('categories-list');
 const rndElemLink = document.getElementById('random-element');
 const selectTypeMenu = document.getElementById('select_type');
 const selectSeasonMenu = document.getElementById('select_season');
+const changeSizeBtn = document.getElementById('change-galley_size');
+let changed = true;
+
+function toggle() {
+	changed = !changed;
+}
+
+changeSizeBtn.addEventListener('click', () => {
+	const clothElements = document.querySelectorAll('.element');
+	toggle()
+	clothElements.forEach(item => {
+		if (!changed) {
+			changeSizeBtn.innerHTML = 'Увеличить'
+			item.style = "width: 200px"
+		} else {
+			changeSizeBtn.innerHTML = 'Уменьшить'
+			item.style = "width: 375px"
+		}
+	})
+})
+
 
 function fillSelectMenu(menu, array) {
 	for (let i = 0; i < array.length; i++) {
@@ -19,10 +40,10 @@ function makeOption(name) {
 
 function showRndElement() {
 	let rndNum = Math.floor(Math.random() * data.length);
-	localStorage.setItem('id',rndNum);
+	localStorage.setItem('id', rndNum);
 };
 
-rndElemLink.addEventListener('click',() => {
+rndElemLink.addEventListener('click', () => {
 	showRndElement();
 })
 
@@ -42,7 +63,7 @@ function makeClothCard(type, brand, season, id) {
 
 function fillClothLibrary() {
 	for (let i = 0; i < data.length; i++) {
-		clothesLib.appendChild(makeClothCard(data[i].type, data[i].brand,data[i].season,i+1))
+		clothesLib.appendChild(makeClothCard(data[i].type, data[i].brand, data[i].season, i + 1))
 	}
 
 	refreshBtnActions()
@@ -51,8 +72,8 @@ function fillClothLibrary() {
 function refreshBtnActions() {
 	const elementIdLink = document.querySelectorAll('.element_link');
 	elementIdLink.forEach(link => {
-		link.addEventListener('click',(e) => {
-			localStorage.setItem('id',`${e.target.getAttribute('clothid')-1}`)
+		link.addEventListener('click', (e) => {
+			localStorage.setItem('id', `${e.target.getAttribute('clothid')-1}`)
 		})
 	})
 }
@@ -60,7 +81,7 @@ function refreshBtnActions() {
 function makeCategoryLink(name) {
 	const element = document.createElement('a');
 	element.className = 'category_link';
-	element.setAttribute('href','#')
+	element.setAttribute('href', '#')
 	element.innerHTML = `
 	${name}
 	`
