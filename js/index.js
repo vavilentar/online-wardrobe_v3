@@ -16,7 +16,7 @@ changeSizeBtn.addEventListener('click', () => {
 	clothElements.forEach(item => {
 		if (!changed) {
 			changeSizeBtn.innerHTML = 'Увеличить'
-			item.style = "width: 200px"
+			item.style = "width: 180px"
 		} else {
 			changeSizeBtn.innerHTML = 'Уменьшить'
 			item.style = "width: 375px"
