@@ -198,7 +198,7 @@ button {
 
 .title {
 	font-weight: 500;
-	font-size: 1.5em;
+	font-size: 1.4em;
 	text-transform: uppercase;
 	margin-bottom: 25px;
 	margin-left: 50px;
@@ -210,7 +210,7 @@ button {
 	width: fit-content;
 	height: fit-content;
 	padding: 5px 10px;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	border-radius: 10px;
 	background-color: white;
 	transition: color .2s ease, background-color .2s ease;
@@ -305,22 +305,24 @@ button {
 	padding: 20px;
 	border-radius: 5px;
 	border: 1px solid #9c7da7;
+	width: 350px;
 }
 
 #new-element_form select,
 input {
 	font-family: 'Roboto';
-	height: 50px;
-	width: 350px;
+	height: 40px;
+	width: 100%;
 	font-size: 1.2em;
 	padding: 0 10px;
 	margin: 10px 0;
 	border-radius: 5px;
 	border: 1px solid #9c7da7;
+	color: #252525;
 }
 
 #new-element_form button {
-	width: 350px;
+	width: 100%;
 	margin-top: 10px;
 	border: 1px solid #9c7da7;
 	border-radius: 5px;
@@ -339,7 +341,7 @@ input {
 }
 
 #new-element_form label {
-	font-size: 1.2em;
+	font-size: 1em;
 }
 
 #change-galley_size {
@@ -361,13 +363,16 @@ input {
 	font-size: 1.2em;
 }
 
-
+.new-element {
+	margin: 50px auto;
+}
 
 
 @media (max-width:426px) {
-	#change-galley_size{
+	#change-galley_size {
 		display: block;
 	}
+
 	.navbar {
 		display: none;
 	}
@@ -396,11 +401,11 @@ input {
 	.element_mini {
 		width: 180px;
 	}
-	
+
 	.element_mini .element_name {
 		font-size: 1.2em;
 	}
-	
+
 	.element_mini .element_brand {
 		font-size: 1em;
 	}
