@@ -25,7 +25,7 @@
 			<div class="navbar navbar__container">
 				<ul>
 					<li><a href="#">Мой шкаф</a></li>
-					<li><a href="#">Добавить элемент</a></li>
+					<li><a href="./pages/new-item.html">Добавить элемент</a></li>
 					<li><a href="#">Категории</a></li>
 					<li><a href="#">Сезоны</a></li>
 					<li><a id="random-element" href="./pages/item.html"><i class="fa-solid fa-dice"></i></a></li>
@@ -35,14 +35,15 @@
 	</header>
 	<main>
 		<div class="clothes clothes__container">
-			<h2 class="title">Привет, Татьяна!</h2>
-			<h2 class="title">Мой шкаф</h2>
-			<div id="clothes-library"></div>
-		</div>
-		<div class="categories categories__container">
-			<h2 class="title">Категории</h2>
-			<div id="categories-list">
+			<h2 class="title username-title">Привет, Татьяна!</h2>
+			<div class="categories categories__container">
+				<h2 class="title">Категории</h2>
+				<div id="categories-list">
+				</div>
 			</div>
+			<h2 class="title">Мой шкаф</h2>
+			<button id="change-galley_size">Уменьшить</button>
+			<div class="clothes-library_mini" id="clothes-library"></div>
 		</div>
 		<div class="new-element new-element__container">
 			<h2 class="title">Добавить новый элемент одежды</h2>

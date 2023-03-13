@@ -21,7 +21,7 @@
 			<div class="navbar navbar__container">
 				<ul>
 					<li><a href="../index.html">Мой шкаф</a></li>
-					<li><a href="./new-item.html">Добавить элемент</a></li>
+					<li><a href="#">Добавить элемент</a></li>
 					<li><a href="#">Категории</a></li>
 					<li><a href="#">Сезоны</a></li>
 					<li><a id="random-element" href="./item.html"><i class="fa-solid fa-dice"></i></a></li>
@@ -30,25 +30,6 @@
 		</nav>
 	</header>
 	<main>
-		<div class="element-detailed element-detailed__container">
-			<div id="element_fullinfo">
-				<img src="../storage/photos/1.jpg" alt="#">
-				<div class="info">
-					<h2>Название</h2>
-					<p>Бренд</p>
-					<p>Категория: <b>Кофта</b></p>
-					<p>Сезон: <b>Сезон</b></p>
-					<p>Цвет: <b>Зеленая</b></p>
-					<p>Последнее использование: <b>Никогда</b></p>
-					<button class="favorite-btn">Добавить в избранное</button>
-				</div>
-			</div>
-		</div>
-		<div class="categories categories__container">
-			<h2 class="title">Категории</h2>
-			<div id="categories-list">
-			</div>
-		</div>
 		<div class="new-element new-element__container">
 			<h2 class="title">Добавить новый элемент одежды</h2>
 			<div id="new-element_form">
@@ -65,12 +46,18 @@
 				</form>
 			</div>
 		</div>
+		
+		<div class="categories categories__container">
+			<h2 class="title">Категории</h2>
+			<div id="categories-list">
+			</div>
+		</div>
 	</main>
 	<footer></footer>
 
 	<script src="../storage/categories.js"></script>
 	<script src="../storage/seasons.js"></script>
 	<script src="../storage/local.js"></script>
-	<script src="./item.js"></script>
+	<script src="./new-item.js"></script>
 </body>
 </html>
