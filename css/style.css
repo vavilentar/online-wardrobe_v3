@@ -135,7 +135,9 @@ button {
 
 .element {
 	width: 285px;
-	/* height: fit-content; */
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 	position: relative;
 	border: .5px solid #9c7da7;
 	padding: 15px;
